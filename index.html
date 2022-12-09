@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, Initial-scale=1.0">
+        <title>Personal Portfolio Website - Vraj Patel</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1ae0ee4eb9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo1.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Programmer</p>
+                <h1>Hello, I am <span>Vraj Patel</span></h1>
+            </div>
+        </div>
+    </div>
+   <!--------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Vraj Patel, I am from India live in Canada.
+                    I have completed my Diploma from St.Clair College, 
+                    Windsor in Computer System and Network-Technician.</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> <b>Skills</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"> <b>Experience</b></p>
+                        <p class="tab-links" onclick="opentab('education')"> <b>Education</b></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Core and Advanced Programming</li>
+                            <li><span>AR/AI Designing</span><br>Snapchat Filter creation</li>
+                            <li><span>Painting</span><br>Acrylic/Oil Painting</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>November-2021 - Current</span><br>Technical Support Agent at Gatestone and Co. , Burlington</li>
+                            <li><span>May-2021 - November-2021</span><br>Technical Support Agent at Alorica, Hamilton</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>April-2018</span><br>High-School Graduation from 
+                                <br>Jawahar Navodaya Vidhyalaya Kathlal, Kheda, Gujrat, India</li>
+                            <li><span>April-2021</span><br>Diploma in Computer System and Network-Technician from 
+                                <br>St.Clair College, Windsor,ON, Canada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------services----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-square-snapchat"></i>
+                    <h2>AR/AI Designing</h2>
+                    <p>I will help you to provide your own occation Snapchat Filter.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Potraite/Acrylic/Oil Painting</h2>
+                    <p>I am happy to give you my best art work according to your interest which types of painting you need.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Java Project</h2>
+                    <p>I can give my Java Programming skill to help or finished Java Projects and Java related work</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Snapchat Filters and Lens</h3>
+                        <a href="https://www.snapchat.com/add/pvraj321"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Acrylic/oil Painting</h3>
+                        <a href="https://drive.google.com/drive/folders/13Zeat3YQF3SRD-VNV9OdA4bcZ_zTa8RS?usp=share_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Java Projects</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact" class="btn">See more</a>
+        </div>
+    </div>
+<!------------------contact-------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> javavraj321@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/VrajPatel321/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/v.patel321/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/vraj_321"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.snapchat.com/add/pvraj321"><i class="fab fa-snapchat"></i></a>
+                    <a href="https://www.linkedin.com/in/vraj-patel-5a1948178/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Images/VRAJ PATEL-RESUME.pdf" download class ="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Vraj Patel <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+ 
+   <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx4tPbMxQoDlkMBSW8bSX2Qtt832ddVWKC0OGGUW-JGJsYu385SibAUDX8q_MdTPjX2tQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+    </body>              I
+    </html>
+    
